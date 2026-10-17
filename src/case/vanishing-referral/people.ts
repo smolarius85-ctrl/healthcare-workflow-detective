@@ -1,0 +1,72 @@
+import type { Character, Location } from '../types';
+
+export const locations: Location[] = [
+  { id: 'frontdesk', name: 'Clinic Front Desk', blurb: 'Where referrals start. Fax machine humming, phones ringing, a laminated checklist by the printer.' },
+  { id: 'hub', name: 'Referral Coordination Hub', blurb: 'The central team that reviews referrals and hands them to outreach. Two monitors per desk, one shared folder everyone mentions.' },
+  { id: 'manager', name: "Clinic Manager's Office", blurb: 'Binders, a whiteboard of weekly numbers, and the official process documents.' },
+  { id: 'systems', name: 'Systems and Reporting Desk', blurb: 'Home of ReferralTrack and OutreachBoard — and the person who can pull event logs.' },
+  { id: 'patientexp', name: 'Patient Experience Desk', blurb: 'Where patients call when they have not heard anything.' },
+];
+
+export const characters: Character[] = [
+  {
+    id: 'marisol',
+    name: 'Marisol Reyes',
+    role: 'Front Desk Coordinator, Riverbend Clinic',
+    roleKey: 'frontdesk',
+    locationId: 'frontdesk',
+    intro: 'Eleven years at Riverbend. Knows every regular patient by voice and every quirk of the fax machine.',
+    perspective: 'Sends referrals and fields the calls when patients have not heard back.',
+    avatar: { skin: '#b5835a', hair: '#2b1d16', hairStyle: 'bun', shirt: '#e07a5f', accent: '#f6eedd', earrings: true, lanyard: true },
+  },
+  {
+    id: 'dev',
+    name: 'Dev Okafor',
+    role: 'Referral Coordinator, Coordination Hub',
+    roleKey: 'coordinator',
+    locationId: 'hub',
+    intro: 'One of three referral coordinators. Organized, a little tired, keeps a spreadsheet for everything.',
+    perspective: 'Reviews incoming referrals, flags gaps, and re-keys ready referrals for outreach.',
+    avatar: { skin: '#6b4430', hair: '#1a1210', hairStyle: 'crop', shirt: '#2a7f7a', accent: '#d9a441', glasses: true, beard: true },
+  },
+  {
+    id: 'priya',
+    name: 'Priya Natarajan',
+    role: 'Clinic Manager, Riverbend & Eastgate',
+    roleKey: 'manager',
+    locationId: 'manager',
+    intro: 'Runs two clinics and a weekly numbers meeting. Direct, fair, and short on time.',
+    perspective: 'Sees referral delays through complaints and weekly summaries.',
+    avatar: { skin: '#9a6a48', hair: '#20150f', hairStyle: 'long', shirt: '#14524f', accent: '#e07a5f', earrings: true },
+  },
+  {
+    id: 'tomas',
+    name: 'Tomás Lindqvist',
+    role: 'Systems Analyst, Systems & Reporting',
+    roleKey: 'analyst',
+    locationId: 'systems',
+    intro: 'Maintains ReferralTrack and OutreachBoard. Precise about what the data can and cannot say.',
+    perspective: 'Knows how the systems record events — not why people did what they did.',
+    avatar: { skin: '#e8c4a6', hair: '#c9a46a', hairStyle: 'short', shirt: '#5b6b8c', accent: '#f6eedd', glasses: true },
+  },
+  {
+    id: 'ruth',
+    name: 'Ruth Abernathy',
+    role: 'Patient Experience Representative',
+    roleKey: 'patientexp',
+    locationId: 'patientexp',
+    intro: 'Answers the patient line. Calm on the phone and meticulous in the call log.',
+    perspective: 'Hears what patients experience, but cannot see inside the referral systems.',
+    avatar: { skin: '#d9a77f', hair: '#9a9a9a', hairStyle: 'waves', shirt: '#b8892d', accent: '#14524f', glasses: true },
+  },
+  {
+    id: 'celeste',
+    name: 'Celeste Moreau',
+    role: 'Director of Operations',
+    roleKey: 'director',
+    locationId: 'manager',
+    intro: 'Asked for this investigation. Under pressure to act, and determined not to act blindly.',
+    perspective: 'Sees the organization-wide picture: complaint trends, vendor pitches, and budget requests.',
+    avatar: { skin: '#4a2f22', hair: '#0f0b09', hairStyle: 'curly', shirt: '#7a3b52', accent: '#d9a441', earrings: true },
+  },
+];
