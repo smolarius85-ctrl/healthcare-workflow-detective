@@ -3,6 +3,7 @@
 A fictional training simulation for practicing workflow discovery, process mapping, evidence evaluation, operational measurement and practical recommendations.
 
 **Live site:** https://smolarius85-ctrl.github.io/healthcare-workflow-detective/
+
 All organizations, people, records and policies are invented. No real patient data is used.
 
 ## Run it
